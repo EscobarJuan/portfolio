@@ -1,9 +1,10 @@
 import React, { useState, useMemo } from "react";
 
-const VideoContext = React.createContext();
+
+const VideoContext = React.createContext("https://www.youtube.com/embed/R8wTrIaasKw");
 
 export function VideoProvider(){
-    const src=useState(null);
+    const src=useState();
     
     const value= useMemo(()=>{
         return({

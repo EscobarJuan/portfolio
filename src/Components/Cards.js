@@ -20,9 +20,7 @@ import { Router, Route } from "react-router-dom";
 function Cards({projects}){
   const clickMe = (link) => {
     console.log(link);
-    return(
-      <Proyectos src={link}/>
-   )
+
   }
   return(
     <ImageList sx={{bgcolor:'black',margin:0}}cols={1} >

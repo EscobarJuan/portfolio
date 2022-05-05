@@ -1,7 +1,10 @@
 import React from "react";
 import CardMedia from '@mui/material/CardMedia'
+import {BrowserRouter,Routes,Route,Link, Outlet, Router} from "react-router-dom";
+
 
 function Proyectos(props){
+    console.log(props);
     return(
         <div>
             <CardMedia
@@ -10,6 +13,7 @@ function Proyectos(props){
                 src={props.src}
             />
         </div>
-    )
+    );
 }
+
 export default Proyectos
