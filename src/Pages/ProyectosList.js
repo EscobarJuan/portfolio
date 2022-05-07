@@ -26,14 +26,14 @@ class ProyectosList extends React.Component{
             img:  `${SimKite}`,
             title: 'Simulador VR de Manejo de Kitesurf',
             description: 'Proyecto final de carrera',
-            link:"https://www.youtube.com/embed/R8wTrIaasKw2",
+            link:"https://www.youtube.com/embed/QmTAZ0dotog",
           },
           {
             id:3,
             img: `${JuegoEST}`,
             title: 'Videojuego en 3ra Persona',
             description: 'Escenario inspirado en la Facultad',
-            link:"https://www.youtube.com/embed/R8wTrIaasKw3",
+            link:"https://www.youtube.com/embed/ohN7wOQyBA4",
           },
           {
             id:4,
