@@ -17,9 +17,9 @@ function Proyectos(props){
                 <Card sx={{ bgcolor:"#D2D2E3", border:2, borderColor:'darkblue'}}>
                     {props.src == "http://www.escuelasuperiordeguerra.iese.edu.ar/" ?  
 
-                        
+                        <CardMedia >  
                             <ResponsiveEmbed src={props.src} allowFullScreen/>  
-                       
+                        </CardMedia>
                         : 
 
                         <CardMedia sx={{maxWidth:800, m:0, ml:'auto', mr:'auto'}}>
