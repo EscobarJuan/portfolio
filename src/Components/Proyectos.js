@@ -13,14 +13,12 @@ function Proyectos(props){
     console.log(props);
     return(
         <div>
-            <Card sx={{ bgcolor:"#D2D2E3", height:'93vh'}}>
+            <Card sx={{ bgcolor:"#D2D2E3", height:'120vh'}}>
 
                 {props.src=="http://www.escuelasuperiordeguerra.iese.edu.ar/" ?
-                    <Card sx={{ bgcolor:"#D2D2E3", border:2, borderColor:'darkblue'}}>
-                        <CardMedia sx={{maxWidth:800, m:0, ml:'auto', mr:'auto', height:"80vh"}}>
+                    
                             <iframe src={props.src} width="100%" height="100%"/> 
-                        </CardMedia>
-                     </Card>
+                   
                 :
                     <Card sx={{ bgcolor:"#D2D2E3", border:2, borderColor:'darkblue'}}>
                         <CardMedia sx={{maxWidth:800, m:0, ml:'auto', mr:'auto'}}>
