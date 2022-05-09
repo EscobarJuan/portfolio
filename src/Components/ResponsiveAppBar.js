@@ -103,6 +103,7 @@ const ResponsiveAppBar = () => {
             variant="h6"
             noWrap
             component="a"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -114,7 +115,7 @@ const ResponsiveAppBar = () => {
               textDecoration: 'none',
             }}
           >
-            Portfolio Ing Juan Escobar
+           Ing Juan Escobar
           </Typography>
           <Box justifyContent={"flex-end"} mr={2} sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }}}>
             {pages.map((page) => (
