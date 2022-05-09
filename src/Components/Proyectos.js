@@ -7,16 +7,15 @@ import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import ResponsiveEmbed from "react-responsive-embed";
 
-
 function Proyectos(props){
 
     console.log(props);
     return(
         <div>
-            <Card sx={{ bgcolor:"#D2D2E3", height:'100vh'}}>
+            <Card sx={{ bgcolor:"#D2D2E3", height:'50vh'}}>
                 
                     {props.src == "http://www.escuelasuperiordeguerra.iese.edu.ar/" ?  
-                           <ResponsiveEmbed src={props.src}  ratio = ' 3:1.5 '/> 
+                           <ResponsiveEmbed src={props.src}  allowFullScreen/> 
                         : 
                         <Card sx={{ bgcolor:"#D2D2E3", border:2, borderColor:'darkblue'}}>
                             <CardMedia sx={{maxWidth:800, m:0, ml:'auto', mr:'auto'}}>
