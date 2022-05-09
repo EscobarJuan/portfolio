@@ -14,20 +14,17 @@ function Proyectos(props){
     return(
         <div>
             <Card sx={{ bgcolor:"#D2D2E3", height:'100vh'}}>
-                <Card sx={{ bgcolor:"#D2D2E3", border:2, borderColor:'darkblue'}}>
+                
                     {props.src == "http://www.escuelasuperiordeguerra.iese.edu.ar/" ?  
-
-                        <CardMedia sx={{maxWidth:800, m:0, ml:'auto', mr:'auto'}}>
-                            <h1>Prueba</h1>
-                            <ResponsiveEmbed src={props.src}  ratio = ' 3:1.5 '/>  
-                        </CardMedia>
+                           <ResponsiveEmbed src={props.src}  ratio = ' 3:1.5 '/> 
                         : 
-
-                        <CardMedia sx={{maxWidth:800, m:0, ml:'auto', mr:'auto'}}>
-                            <ResponsiveEmbed src={props.src}  ratio = ' 3:1.5 '/>  
-                        </CardMedia>
+                        <Card sx={{ bgcolor:"#D2D2E3", border:2, borderColor:'darkblue'}}>
+                            <CardMedia sx={{maxWidth:800, m:0, ml:'auto', mr:'auto'}}>
+                                <ResponsiveEmbed src={props.src}  ratio = ' 3:1.5 '/>  
+                            </CardMedia>
+                        </Card>
                     }
-                </Card>
+               
                 <Typography sx={{padding:4}} textAlign="center" /*LinkedIn */>
                     <Button variant="outlined" sx={{bgcolor:'white', m:0.3}} href="/">Volver</Button>
                 </Typography>
