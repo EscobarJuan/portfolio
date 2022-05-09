@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import CardMedia from '@mui/material/CardMedia'
 import {BrowserRouter,Routes,Route,Link, Outlet, Router} from "react-router-dom";
 import VideoContext from './Video-Context'
-import { Button } from "@mui/material";
+import { Button, ImageListItem } from "@mui/material";
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import ResponsiveEmbed from "react-responsive-embed";
@@ -14,12 +14,22 @@ function Proyectos(props){
     return(
         <div>
             <Card sx={{ bgcolor:"#D2D2E3", height:'93vh'}}>
-                <Card sx={{ bgcolor:"#D2D2E3", border:2, borderColor:'darkblue'}}>
-                    <CardMedia sx={{maxWidth:800, m:0, ml:'auto', mr:'auto'}}>
-                        <ResponsiveEmbed src={props.src}  ratio = ' 3:1.5 '/>  
-                    </CardMedia>
-                </Card>
-                <Typography sx={{padding:2}} textAlign="center" /*LinkedIn */>
+
+                {props.src=="http://www.escuelasuperiordeguerra.iese.edu.ar/" ?
+                    <Card sx={{ bgcolor:"#D2D2E3", border:2, borderColor:'darkblue'}}>
+                        <CardMedia sx={{maxWidth:800, m:0, ml:'auto', mr:'auto', height:"80vh"}}>
+                            <iframe src={props.src} width="100%" height="100%"/> 
+                        </CardMedia>
+                     </Card>
+                :
+                    <Card sx={{ bgcolor:"#D2D2E3", border:2, borderColor:'darkblue'}}>
+                        <CardMedia sx={{maxWidth:800, m:0, ml:'auto', mr:'auto'}}>
+                            <ResponsiveEmbed src={props.src}  ratio = ' 3:1.5 '/>  
+                        </CardMedia>
+                    </Card>
+                }
+                
+                <Typography sx={{padding:2}} textAlign="center">
                     <Button variant="outlined" sx={{bgcolor:'white', m:0.3}} href="/">Volver</Button>
                 </Typography>
             </Card>
