@@ -116,7 +116,7 @@ const ResponsiveAppBar = () => {
               textDecoration: 'none',
             }}
           >
-           Ing Juan Escobar
+           Ing Escobar
           </Typography>
           <Box justifyContent={"flex-end"} mr={2} sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }}}>
             {pages.map((page) => (

@@ -110,13 +110,13 @@ const {setVideo} = useContext(VideoContext)
                     </Card> 
                   </ImageList>       
                 </Link>  
-                <CardContent>
+                <CardContent sx={{ marginBottom:0, paddingBottom:0}}>
                   <Typography variant="body1" color="text.secondary" sx={{textAlign:"justify"}}>
                     {`${project.resenia}`}
                   </Typography>
                 </CardContent>
                 <CardActions disableSpacing>
-                  <MenuBookIcon/>
+                  <h4><MenuBookIcon margin={0} padding={0}/>  Saber más... </h4>
                   <ExpandMore
                     expand={expandedId===i}
                     onClick={() => handleExpandClick(i)}
