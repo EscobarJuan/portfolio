@@ -9,7 +9,7 @@ import { makeStyles } from "@mui/material";
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import { CardActionArea, Grid } from '@mui/material';
+import { CardActionArea, Grid, CardActions } from '@mui/material';
 import { Box, margin } from "@mui/system";
 import Proyectos from './Proyectos'
 import ProyectosList from '../Pages/ProyectosList';
@@ -18,18 +18,35 @@ import { Router, Route } from "react-router-dom";
 import{VideoContext} from './Video-Context'
 import {Link} from "react-router-dom";
 import FondoClaro5 from "../Images/FondoClaro5.jpg"
+import { styled } from '@mui/material/styles';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import MoreVertIcon from '@mui/icons-material/MoreVert';
+import Collapse from '@mui/material/Collapse';
+
+const ExpandMore = styled((props) => {
+  const { expand, ...other } = props;
+  return <IconButton {...other} />;
+  })(({ theme, expand }) => ({
+  transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
+  marginLeft: 'auto',
+  transition: theme.transitions.create('transform', {
+    duration: theme.transitions.duration.shortest,
+  }),
+  }));
+
 
 export default function Cards({projects}){
+  const [expandedId, setExpandedId] = React.useState(-1);
+  const handleExpandClick = (i) => {
+    setExpandedId(expandedId === i ? -1 : i);
+  };
+
 
 const {video} = useContext(VideoContext)
 const {setVideo} = useContext(VideoContext)
 
-
-console.log(video)
-
-  const clickMe = (link) => {
-    console.log(link);
-  }
   return(
     <div style={{backgroundImage: `url(${FondoClaro5}), linear-gradient(to right, #6078EA, #fff`, 
       width:"100%", 
@@ -60,8 +77,8 @@ console.log(video)
         </ImageListItem>
         <ImageListItem >
           <Grid container >    
-            {projects.map((project) => (
-              <Box sx={{m:'auto', p:4}}>
+            {projects.map((project,i) => (
+              <Box sx={{m:'auto', p:4, width:'70%', maxWidth:600, height:'auto', marginTop:0}}>
                 <Link to="/projects">
                   <ImageList sx={{overflow:'hidden',border:2,borderRadius:4,borderColor:'darkblue'}} cols={1}>
                     <Card sx={{width:"100%"}} >
@@ -79,7 +96,6 @@ console.log(video)
                             />
                             <ImageListItemBar 
                               title={project.title}
-                              subtitle={project.description}
                               actionIcon={
                                 <IconButton
                                   sx={{color: 'rgba(255, 255, 255, 0.54)' }}
@@ -93,8 +109,35 @@ console.log(video)
                       </CardActionArea>
                     </Card> 
                   </ImageList>       
-                </Link>     
+                </Link>  
+                <CardContent>
+                  <Typography variant="body1" color="text.secondary" sx={{textAlign:"justify"}}>
+                    {`${project.resenia}`}
+                  </Typography>
+                </CardContent>
+                <CardActions disableSpacing>
+                  <MenuBookIcon/>
+                  <ExpandMore
+                    expand={expandedId===i}
+                    onClick={() => handleExpandClick(i)}
+                    aria-expanded={expandedId === i}
+                    aria-label="show more"
+                  >
+                    <ExpandMoreIcon />
+                  </ExpandMore>
+                </CardActions>
+                <Collapse in={expandedId === i} timeout="auto" unmountOnExit>
+                  <CardContent>
+                    <Typography variant="body1" color="text.secondary" sx={{textAlign:"justify", marginBottom:2}}>
+                      {`${project.parrafo1}`}
+                    </Typography>
+                    <Typography variant="body1" color="text.secondary" sx={{textAlign:"justify"}}>
+                      {`${project.parrafo2}`}
+                    </Typography>
+                  </CardContent>
+                </Collapse>   
               </Box>
+              
             ))}
           </Grid>
         </ImageListItem>
