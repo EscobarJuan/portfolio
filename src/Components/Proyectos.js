@@ -18,6 +18,7 @@ function Proyectos(props){
                     {props.src == "http://www.escuelasuperiordeguerra.iese.edu.ar/" ?  
 
                         <CardMedia sx={{maxWidth:800, m:0, ml:'auto', mr:'auto'}}>
+                            <h1>Prueba</h1>
                             <ResponsiveEmbed src={props.src}  ratio = ' 3:1.5 '/>  
                         </CardMedia>
                         : 
