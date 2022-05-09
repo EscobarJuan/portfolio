@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.e6c13ad2.css",
+    "main.js": "/portfolio/static/js/main.5950a4a9.js",
+    "static/js/787.635b31b8.chunk.js": "/portfolio/static/js/787.635b31b8.chunk.js",
+    "static/media/SK105.png": "/portfolio/static/media/SK105.43c5c7be6888a52de59b.png",
+    "static/media/Echair.png": "/portfolio/static/media/Echair.7a81e26b01667d79b5d3.png",
+    "static/media/GyJ.png": "/portfolio/static/media/GyJ.8c943815bf5944ed6e46.png",
+    "static/media/SaveTheBall.png": "/portfolio/static/media/SaveTheBall.3d069427b8b8ee93cfea.png",
+    "static/media/MedTemp.png": "/portfolio/static/media/MedTemp.c3da7c274440f61ea4db.png",
+    "static/media/JuegoEST.png": "/portfolio/static/media/JuegoEST.d6e0f41800f341f9d34a.png",
+    "static/media/SimKite.jpg": "/portfolio/static/media/SimKite.2d8321c471b3cd7de0af.jpg",
+    "static/media/FotoAvatar.jfif": "/portfolio/static/media/FotoAvatar.9ccbc1c0be6dc7fd3d32.jfif",
+    "index.html": "/portfolio/index.html",
+    "main.e6c13ad2.css.map": "/portfolio/static/css/main.e6c13ad2.css.map",
+    "main.5950a4a9.js.map": "/portfolio/static/js/main.5950a4a9.js.map",
+    "787.635b31b8.chunk.js.map": "/portfolio/static/js/787.635b31b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.5950a4a9.js"
+  ]
+}
