@@ -55,6 +55,7 @@ class ProyectosList extends React.Component{
             title: 'Proyecto MEDTEMP',
             description: 'Desarrollado para el Ministerio de Defensa Argentino ',
             link:"http://www.escuelasuperiordeguerra.iese.edu.ar/",
+            website: true,
           },
           {
             id:7,

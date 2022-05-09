@@ -23,6 +23,7 @@ export default function Cards({projects}){
 
 const {video} = useContext(VideoContext)
 const {setVideo} = useContext(VideoContext)
+
 console.log(video)
 
   const clickMe = (link) => {
