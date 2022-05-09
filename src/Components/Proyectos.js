@@ -25,7 +25,7 @@ function Proyectos(props){
                 :
                     <Card sx={{ bgcolor:"#D2D2E3", border:2, borderColor:'darkblue'}}>
                         <CardMedia sx={{maxWidth:800, m:0, ml:'auto', mr:'auto'}}>
-                            <ResponsiveEmbed src={props.src}  ratio = ' 3:1.5 '/>  
+                            <ResponsiveEmbed src={props.src} width='80vw' ratio = ' 3:1 '/>  
                         </CardMedia>
                     </Card>
                 }

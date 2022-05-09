@@ -65,8 +65,8 @@ console.log(video)
                       <CardMedia sx={{width:"100%"}} >
                         <ImageListItem key={project.img} >
                           <img   
-                            src={`${project.img}?w=350&h=233&fit=crop&auto=format`}
-                            srcSet={`${project.img}?w=350&h=233&fit=crop&auto=format&dpr=2 2x`}
+                            src={`${project.img}`}
+                            srcSet={`${project.img}`}
                             alt={project.title}
                             loading="lazy"
                           />
