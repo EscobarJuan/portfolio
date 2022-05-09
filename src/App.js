@@ -13,7 +13,7 @@ const [video, setVideo] =useState({});
 
   return (
     <div>
-      <ResponsiveAppBar/>
+      <ResponsiveAppBar />
 
       <VideoContext.Provider value={{
         video,

@@ -6,7 +6,7 @@ import { Avatar, Button, CardActionArea, CardActions, IconButton, ImageListItem 
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import ResponsiveEmbed from "react-responsive-embed";
-import LogoFie from '../Images/LogoFie.png'
+import LogoInf from '../Images/LogoInf.png'
 
 
 function Proyectos(props){
@@ -19,13 +19,13 @@ function Proyectos(props){
                 {props.src=="http://www.escuelasuperiordeguerra.iese.edu.ar/" ?
                     <CardActionArea href={props.src}>
                         <CardMedia sx={{maxWidth:800, m:2, ml:'auto', mr:'auto', textAlign:'center'}}>
-                            <img width={"30%"} height="30%" src={LogoFie}/>
+                            <img width={"30%"} height="30%" src={LogoInf}/>
                         </CardMedia>  
                     </CardActionArea>                         
                 :
                     <Card sx={{ bgcolor:"#D2D2E3", border:2, borderColor:'darkblue'}}>
                         <CardMedia sx={{maxWidth:800, m:0, ml:'auto', mr:'auto'}}>
-                            <ResponsiveEmbed src={props.src} width='80vw' ratio = ' 3:1 '/>  
+                            <ResponsiveEmbed src={props.src}  ratio = ' 3:1.5 '/>  
                         </CardMedia>
                     </Card>
                 }

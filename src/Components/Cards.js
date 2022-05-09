@@ -17,7 +17,7 @@ import App from "../App";
 import { Router, Route } from "react-router-dom";
 import{VideoContext} from './Video-Context'
 import {Link} from "react-router-dom";
-
+import FondoClaro5 from "../Images/FondoClaro5.jpg"
 
 export default function Cards({projects}){
 
@@ -31,67 +31,75 @@ console.log(video)
     console.log(link);
   }
   return(
-    <ImageList sx={{bgcolor:'#D2D2E3',margin:0}}cols={1} >
-      <ImageListItem  key="Subheader"  >
-        <ListSubheader  
-          sx={{background:'#D2D2E3'}}
-          component="div">
-           
-          <Typography 
-            sx={{paddingTop:4}}
-            color="darkblue" 
-            align="center"
-            fontFamily={ 'monospace'}
-            fontSize= {40}
-            fontWeight = {700}
-            letterSpacing= {'.2rem'}
+    <div style={{backgroundImage: `url(${FondoClaro5}), linear-gradient(to right, #6078EA, #fff`, 
+      width:"100%", 
+      height:"auto",
+      p:0, 
+      backgroundSize:"auto",
+      }}>
+      <ImageList cols={1} sx={{marginTop:0, marginBottom:0}}>
+        <ImageListItem key="Subheader">
+          <ListSubheader  
+            style={{background: "none"}}
+            component="div"
             >
-            PROYECTOS
-          </Typography>
-       
-        </ListSubheader>
-      </ImageListItem>
-      <ImageListItem >
-        <Grid container >    
-          {projects.map((project) => (
-            <Box sx={{m:'auto', p:4}}>
-              <Link to="/projects">
-                <ImageList sx={{overflow:'hidden',border:2,borderRadius:4,borderColor:'darkblue'}} cols={1}>
-                  <Card sx={{width:"100%"}} >
-                    <CardActionArea 
-                      onClick={() => 
-                      {setVideo(project.link)}}
-                      >
-                      <CardMedia sx={{width:"100%"}} >
-                        <ImageListItem key={project.img} >
-                          <img   
-                            src={`${project.img}`}
-                            srcSet={`${project.img}`}
-                            alt={project.title}
-                            loading="lazy"
-                          />
-                          <ImageListItemBar 
-                            title={project.title}
-                            subtitle={project.description}
-                            actionIcon={
-                              <IconButton
-                                sx={{color: 'rgba(255, 255, 255, 0.54)' }}
-                                aria-label={`info about ${project.title}`}
-                              >
-                              </IconButton>
-                            }> 
-                          </ImageListItemBar>
-                        </ImageListItem>
-                      </CardMedia>
-                    </CardActionArea>
-                  </Card> 
-                </ImageList>       
-              </Link>     
-            </Box>
-          ))}
-         </Grid>
-      </ImageListItem>
-    </ImageList>
+            
+            <Typography 
+              sx={{paddingTop:4}}
+              color="darkblue" 
+              align="center"
+              fontFamily={ 'monospace'}
+              fontSize= {40}
+              fontWeight = {700}
+              letterSpacing= {'.2rem'}
+              >
+              PROYECTOS
+            </Typography>
+        
+          </ListSubheader>
+        </ImageListItem>
+        <ImageListItem >
+          <Grid container >    
+            {projects.map((project) => (
+              <Box sx={{m:'auto', p:4}}>
+                <Link to="/projects">
+                  <ImageList sx={{overflow:'hidden',border:2,borderRadius:4,borderColor:'darkblue'}} cols={1}>
+                    <Card sx={{width:"100%"}} >
+                      <CardActionArea 
+                        onClick={() => 
+                        {setVideo(project.link)}}
+                        >
+                        <CardMedia sx={{width:"100%"}} >
+                          <ImageListItem key={project.img} >
+                            <img   
+                              src={`${project.img}`}
+                              srcSet={`${project.img}`}
+                              alt={project.title}
+                              loading="lazy"
+                            />
+                            <ImageListItemBar 
+                              title={project.title}
+                              subtitle={project.description}
+                              actionIcon={
+                                <IconButton
+                                  sx={{color: 'rgba(255, 255, 255, 0.54)' }}
+                                  aria-label={`info about ${project.title}`}
+                                >
+                                </IconButton>
+                              }> 
+                            </ImageListItemBar>
+                          </ImageListItem>
+                        </CardMedia>
+                      </CardActionArea>
+                    </Card> 
+                  </ImageList>       
+                </Link>     
+              </Box>
+            ))}
+          </Grid>
+        </ImageListItem>
+      </ImageList>
+    </div>
   )
 }
 
