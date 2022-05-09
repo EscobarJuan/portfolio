@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import CardMedia from '@mui/material/CardMedia'
 import {BrowserRouter,Routes,Route,Link, Outlet, Router} from "react-router-dom";
 import VideoContext from './Video-Context'
-import { Button, ImageListItem } from "@mui/material";
+import { Button, Container, ImageListItem } from "@mui/material";
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import ResponsiveEmbed from "react-responsive-embed";
@@ -17,9 +17,9 @@ function Proyectos(props){
                 <Card sx={{ bgcolor:"#D2D2E3", border:2, borderColor:'darkblue'}}>
                     {props.src == "http://www.escuelasuperiordeguerra.iese.edu.ar/" ?  
 
-                        <CardMedia >  
-                            <ResponsiveEmbed src={props.src} allowFullScreen/>  
-                        </CardMedia>
+                        <Container>  
+                            <ResponsiveEmbed src={props.src}/>  
+                        </Container>
                         : 
 
                         <CardMedia sx={{maxWidth:800, m:0, ml:'auto', mr:'auto'}}>
