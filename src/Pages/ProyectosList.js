@@ -60,7 +60,7 @@ class ProyectosList extends React.Component{
             link:"https://www.youtube.com/embed/jSc5OguxzlM",
             resenia:"Desarrollo empleado para propuesta de matrimonio",
             parrafo1:`"Cuando uno hace lo que ama, no trabaja nunca más".`,
-            parrafo2:`Este proyecto personal fue para poder traerla a mi esposa casa cada ez que necesite. Ahora vamos a estar siempre cerca de 
+            parrafo2:`Este proyecto personal fue para poder traerla a mi esposa a casa cada vez que necesite. Ahora vamos a estar siempre cerca de 
             nuestros comienzos, no importa donde nos encontremos `,
           },
           {
