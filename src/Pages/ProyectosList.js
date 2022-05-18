@@ -24,7 +24,7 @@ class ProyectosList extends React.Component{
             Consta de dos subsitemas, por un lado el hardware colocado en el tanque y por el otro una interfaz gráfica que recibe esos datos
             de movimiento y permite disparar con calculos balísticos reales.`,
             parrafo1:`Como entregable fue solicitado un simulador que permita ejecutar las acciones que realiza el apuntador a bordo del tanque. 
-            Para ello se fabricaron partes moviles adaptadas al vehíluco, lo que permite recibir los datos de movimientos del tubo cañón y el disparo.`,
+            Para ello se fabricaron partes moviles adaptadas al vehículo, lo que permite recibir los datos de movimientos del tubo cañón y el disparo.`,
             parrafo2:`Asimismo, la trayectoria descripta por la munición en el simulador debía respetar las perturbaciones balísticas recibidas por el entorno.`
           },
           {
