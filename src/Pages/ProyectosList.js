@@ -19,7 +19,7 @@ class ProyectosList extends React.Component{
             img: `${SK105Img}`,
             title: 'Simulador de Tiro de Tanque',
             description: 'Con calculos balísticos reales',
-            link:"https://www.youtube.com/embed/99xpLFocdAI",
+            link:"https://www.youtube.com/embed/OTctEXQocoo",
             resenia:`Este proyecto se encuentra en proceso de desarrollo. 
             Consta de dos subsitemas, por un lado el hardware colocado en el tanque y por el otro una interfaz gráfica que recibe esos datos
             de movimiento y permite disparar con calculos balísticos reales.`,

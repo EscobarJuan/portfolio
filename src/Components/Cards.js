@@ -60,7 +60,6 @@ const {setVideo} = useContext(VideoContext)
             style={{background: "none"}}
             component="div"
             >
-            
             <Typography 
               sx={{paddingTop:4}}
               color="darkblue" 
@@ -137,7 +136,6 @@ const {setVideo} = useContext(VideoContext)
                   </CardContent>
                 </Collapse>   
               </Box>
-              
             ))}
           </Grid>
         </ImageListItem>

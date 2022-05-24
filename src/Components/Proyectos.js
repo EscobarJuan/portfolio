@@ -16,12 +16,10 @@ function Proyectos(props){
     return(
         <div>
             <Card sx={{ bgcolor:"#D2D2E3", height:'120vh'}}>
-
                 {props.src=="http://www.escuelasuperiordeguerra.iese.edu.ar/" ?
                     <CardActionArea href={props.src}>
                         <CardMedia sx={{maxWidth:800, m:2, ml:'auto', mr:'auto', textAlign:'center'}}>
                             <img width={"30%"} height="30%" src={LogoMedTemp}/>
-                            
                             <h2>{<ArrowUpwardIcon/>} Link a la página Oficial de MedTemp{<ArrowUpwardIcon/>}</h2>
                         </CardMedia>  
                     </CardActionArea>                         
@@ -32,7 +30,6 @@ function Proyectos(props){
                         </CardMedia>
                     </Card>
                 }
-                
                 <Typography sx={{padding:2}} textAlign="center">
                     <Button variant="outlined" sx={{bgcolor:'white', m:0.3}} href="/">Volver</Button>
                 </Typography>
