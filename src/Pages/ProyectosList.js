@@ -42,26 +42,25 @@ class ProyectosList extends React.Component{
           },
           {
             id:3,
-            img: `${JuegoEST}`,
-            title: 'Videojuego en 3ra Persona',
-            description: 'Escenario inspirado en la Facultad',
-            link:"https://www.youtube.com/embed/Onx34kHcAC0",
-            resenia:"Juego en tercera persona cuyo escenario está inspirado en la Facultad de Ingeniería del Ejército",
-            parrafo1:`Este videojuego fue un gran desafío para implementar conocimientos de programación orientada a objetos 
-            en un entorno nuevo.`,
-            parrafo2:`El proposito del desarrollo de estos videojuegos fue adquirir de manera progresiva los conocimientos necesarios 
-            para alcanzar proyectos orientados a la simulación`,
+            img: `${MedTemp}`,
+            title: 'Proyecto MEDTEMP',
+            description: 'Desarrollado para el Ministerio de Defensa Argentino ',
+            link:"http://www.escuelasuperiordeguerra.iese.edu.ar/",
+            resenia:"Proyecto desarrollado en el laboratorio de Mecatrónica Infiniem Labs",
+            parrafo1:"Este proyecto fue lanzado en pandemia y tuvo alcance nacional.",
+            parrafo2:`Con un equipo de trabajo se desarrolló un medidor de temperatura con capacidad de elevar datos a una base y controlar 
+            de esta manera los ingresos en las distintas dependencias del Ministerio de Defensa Argentino.`,
           },
           {
             id:4,
-            img: `${GyJ}`,
-            title: 'Videojuego en 1ra Persona',
-            description: 'Empleado para propuesta de casamiento',
-            link:"https://www.youtube.com/embed/jSc5OguxzlM",
-            resenia:"Desarrollo empleado para propuesta de matrimonio",
-            parrafo1:`"Cuando uno hace lo que ama, no trabaja nunca más".`,
-            parrafo2:`Este proyecto personal fue para poder traerla a mi esposa a casa cada vez que necesite. Ahora vamos a estar siempre cerca de 
-            nuestros comienzos, no importa donde nos encontremos `,
+            img: `${Echair}`,
+            title: 'Echair',
+            description: 'Prototipo de silla personas con movilidad reducida',
+            link:"https://www.youtube.com/embed/L8up2-bKew8",
+            resenia:"Prototipo para manejo tactil o por voz de una silla motorizada",
+            parrafo1:`Este proyecto fue realizado con appInventor y Arduino, permitiendo observar el comportamiento del sistema con programación 
+            orientada a objetos en el microcontrolador.`,
+            parrafo2:"",
           },
           {
             id:5,
@@ -76,25 +75,26 @@ class ProyectosList extends React.Component{
           },
           {
             id:6,
-            img: `${MedTemp}`,
-            title: 'Proyecto MEDTEMP',
-            description: 'Desarrollado para el Ministerio de Defensa Argentino ',
-            link:"http://www.escuelasuperiordeguerra.iese.edu.ar/",
-            resenia:"Proyecto desarrollado en el laboratorio de Mecatrónica Infiniem Labs",
-            parrafo1:"Este proyecto fue lanzado en pandemia y tuvo alcance nacional.",
-            parrafo2:`Con un equipo de trabajo se desarrolló un medidor de temperatura con capacidad de elevar datos a una base y controlar 
-            de esta manera los ingresos en las distintas dependencias del Ministerio de Defensa Argentino.`,
+            img: `${JuegoEST}`,
+            title: 'Videojuego en 3ra Persona',
+            description: 'Escenario inspirado en la Facultad',
+            link:"https://www.youtube.com/embed/Onx34kHcAC0",
+            resenia:"Juego en tercera persona cuyo escenario está inspirado en la Facultad de Ingeniería del Ejército",
+            parrafo1:`Este videojuego fue un gran desafío para implementar conocimientos de programación orientada a objetos 
+            en un entorno nuevo.`,
+            parrafo2:`El proposito del desarrollo de estos videojuegos fue adquirir de manera progresiva los conocimientos necesarios 
+            para alcanzar proyectos orientados a la simulación`,
           },
           {
             id:7,
-            img: `${Echair}`,
-            title: 'Echair',
-            description: 'Prototipo de silla personas con movilidad reducida',
-            link:"https://www.youtube.com/embed/L8up2-bKew8",
-            resenia:"Prototipo para manejo tactil o por voz de una silla motorizada",
-            parrafo1:`Este proyecto fue realizado con appInventor y Arduino, permitiendo observar el comportamiento del sistema con programación 
-            orientada a objetos en el microcontrolador.`,
-            parrafo2:"",
+            img: `${GyJ}`,
+            title: 'Videojuego en 1ra Persona',
+            description: 'Empleado para propuesta de casamiento',
+            link:"https://www.youtube.com/embed/jSc5OguxzlM",
+            resenia:"Desarrollo empleado para propuesta de matrimonio",
+            parrafo1:`"Cuando uno hace lo que ama, no trabaja nunca más".`,
+            parrafo2:`Este proyecto personal fue para poder traerla a mi esposa a casa cada vez que necesite. Ahora vamos a estar siempre cerca de 
+            nuestros comienzos, no importa donde nos encontremos `,
           },
       ]
     }   
