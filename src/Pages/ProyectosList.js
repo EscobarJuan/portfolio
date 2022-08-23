@@ -23,7 +23,7 @@ class ProyectosList extends React.Component{
             link:"https://trackon.com.ar/",
             resenia:`Este proyecto fue desarrollado para ser empleado durante el desarrollo de un torneo de Crossfit. 
             Los resultados se cargaban en la base de datos y se mostraban en la página a modo informativo.`,
-            parrafo1:`Pagina Web.`,
+            parrafo1:`Pagina Web desarrollada con ReactJS.`,
             parrafo2:`Desarrollada para DD&S.`,
           },
           {
