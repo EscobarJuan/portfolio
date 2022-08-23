@@ -8,12 +8,23 @@ import GyJ from '../Images/GyJ.png'
 import SaveTheBall from '../Images/SaveTheBall.png'
 import Echair from '../Images/Echair.png'
 import JuegoEST from '../Images/JuegoEST.png'
+import Suyai from '../Images/suyaiCrossfit.jpg'
 
 class ProyectosList extends React.Component{
   constructor(props){
     super(props)
     this.state={
       data : [
+          {
+            id:0,
+            img: `${Suyai}`,
+            title: 'Página Mobile First',
+            description: 'Desarrollado para torneo de Crossfit',
+            link:"https://trackon.com.ar/",
+            resenia:`Este proyecto fue desarrollado para ser empleado durante el desarrollo de un torneo de Crossfit. 
+            Los resultados se cargaban en la base de datos y se mostraban en la página a modo informativo.`,
+           
+          },
           {
             id:1,
             img: `${SK105Img}`,
