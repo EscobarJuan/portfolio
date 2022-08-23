@@ -23,7 +23,8 @@ class ProyectosList extends React.Component{
             link:"https://trackon.com.ar/",
             resenia:`Este proyecto fue desarrollado para ser empleado durante el desarrollo de un torneo de Crossfit. 
             Los resultados se cargaban en la base de datos y se mostraban en la página a modo informativo.`,
-           
+            parrafo1:`Pagina Web.`,
+            parrafo2:`Desarrollada para DD&S.`,
           },
           {
             id:1,
@@ -32,7 +33,7 @@ class ProyectosList extends React.Component{
             description: 'Con calculos balísticos reales',
             link:"https://www.youtube.com/embed/OTctEXQocoo",
             resenia:`Este proyecto se encuentra en proceso de desarrollo. 
-            Consta de dos subsitemas, por un lado el hardware colocado en el tanque y por el otro una interfaz gráfica que recibe esos datos
+            Consta de dos subsistemas, por un lado el hardware colocado en el tanque y por el otro una interfaz gráfica que recibe esos datos
             de movimiento y permite disparar con calculos balísticos reales.`,
             parrafo1:`Como entregable fue solicitado un simulador que permita ejecutar las acciones que realiza el apuntador a bordo del tanque. 
             Para ello se fabricaron partes moviles adaptadas al vehículo, lo que permite recibir los datos de movimientos del tubo cañón y el disparo.`,
